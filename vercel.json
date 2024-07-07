@@ -12,6 +12,6 @@
         "dest": "/src/app.js"
       }
     ],
-    rewrites: { "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
   }
   
