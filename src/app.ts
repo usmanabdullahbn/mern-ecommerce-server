@@ -1,4 +1,5 @@
-import express from "express";
+const express = require('express');
+// import express from "express";
 import { connectDB } from "./utils/features.js";
 import { errorMiddleware } from "./middlewares/error.js";
 import NodeCache from "node-cache";
