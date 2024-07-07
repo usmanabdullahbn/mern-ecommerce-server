@@ -1,7 +1,13 @@
 {
   "version": 2,
+   "builds": [
+      {
+        "src": "src/app.ts",
+        "use": "@vercel/node"
+      }
+    ],
   "routes": [
-    { "src": "/(.)", "dest": "/server.ts" },
+    { "src": "/(.)", "dest": "/server.js" },
     { "src": "/views/layouts/main.handlebars", "dest": "/server.js" },
     { "src": "/public/(.*)", "dest": "/public/$1" }
   ]
