@@ -1,15 +1,8 @@
-   {
+{
   "version": 2,
-  "builds": [
-    {
-      "src": "./server.ts",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "destination": "/"
-    }
+    { "src": "/(.)", "dest": "/server.js" },
+    { "src": "/views/layouts/main.handlebars", "dest": "/server.js" },
+    { "src": "/public/(.*)", "dest": "/public/$1" }
   ]
 }
