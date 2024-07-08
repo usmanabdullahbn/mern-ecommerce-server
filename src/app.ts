@@ -33,7 +33,9 @@ const app = express();
 
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(cors());
+app.use(
+  cors()
+);
 
 app.get("/", (req, res) => {
   res.send("API WOking with /api/v1");
